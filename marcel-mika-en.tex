@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Version 0.1
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym, textcomp} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{tabularx}
+%\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{wrapfig} % Allows profile image float
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	Title
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Marcel Mika }\\
+\medskip 
+{ Curriculum Vitae \\[-50pt]\par}
+	
+\begin{minipage}[t]{0.5\textwidth}% Start the left-hand side of the page
+\vspace{0pt}% Trick for alignment
+\begin{minipage}[b]{0.30\textwidth} % Start the left-hand side of the page
+\includegraphics[width=\textwidth]{figures/profile.jpg}
+\end{minipage}
+%----------------------------------------------------------------------------------------
+%	Personal Info
+%----------------------------------------------------------------------------------------
+\hspace{3pt}
+\begin{minipage}{\textwidth} % Start the left-hand side of the page
+\raggedright
+\mbox{}\\[-40pt]
+\colorbox{white}{\textcolor{text1}{
+\begin{tabular}{c|p{\textwidth}}
+\raisebox{0pt}{\textborn} & 11.1.1988 \\ % Date of birth
+\raisebox{-1pt}{\textifsymbol{18}} & Koněvova 100, 130 00 Prague 3 \\ % Address
+\raisebox{0pt}{\Telefon} & +420 605 724 445 \\ % Phone number
+\raisebox{0pt}{\Letter} & hello@marcelmika.com \\ % Email address
+\end{tabular}
+}}
+\end{minipage}% End the left-hand side of the page
+
+%----------------------------------------------------------------------------------------
+%	Education
+%----------------------------------------------------------------------------------------
+
+\hspace{5pt}
+\section{Education} 
+\medskip
+\begin{tabular}{@{}rl@{}} 
+
+% CTU - Master
+
+\small\textsc{2010 -- 2013} & \large\textbf{Czech Technical University} \\ 
+& \normalsize\textit{Software Engineering} \\ 
+& \small master degree, graduated summa cum laude \\ 
+&\\
+
+% KSU - Exchange
+
+\small\textsc{2010 -- 2011} & \large\textbf{Kansas State University} \\ 
+& \normalsize\textit{Computer Science} \\ 
+& \small exchange programme \\ 
+&\\
+	 
+% CTU - Bachelor
+
+\small\textsc{2007 -- 2010} & \large\textbf{Czech Technical University} \\ 
+& \normalsize\textit{Software Engineering} \\ 
+& \small bachelor degree \\ 
+&\\
+
+\end{tabular}\\[10pt]
+
+
+%----------------------------------------------------------------------------------------
+%	Technological Skills
+%----------------------------------------------------------------------------------------
+
+\section{Technological Skills} 
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{50pt} % Trick for alignment
+	
+	
+%----------------------------------------------------------------------------------------
+%	Professional Experience
+%----------------------------------------------------------------------------------------
+
+\section{Professional experience} 
+\medskip
+
+%  LIMS Technologies
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\large\textbf{LIMS Technologies} & \small\textsc{01/2013 -- now} \\
+\end{tabularx}
+\normalsize\url{http://lims.com}
+
+\medskip
+\normalsize\textbf{CEO and Founder}\\
+\small {Founder and Lead Developer of a technological startup which is proud to 
+develop the leading messaging platform for Liferay.}\\
+\medskip 
+
+%  Awesome Developers
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\large\textbf{Awesome Developers} & \small\textsc{01/2016 -- now} \\
+\end{tabularx}
+\normalsize\url{http://awesomedevelopers.eu}
+
+\medskip
+\normalsize\textbf{Lead Android Developer}\\
+\small {Developing applications for Android based on the latest \newline technologies like Kotlin, RxJava,
+Realm, etc.}\\
+\medskip 
+
+%  Managit
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\large\textbf{Managit} & \small\textsc{06/2015 -- 08/2016} \\
+\end{tabularx}
+\normalsize\url{http://managit.cz}
+
+\medskip
+\normalsize\textbf{Lead iOS Developer}\\
+\small {Developing an application for iOS for defect management used at constructions.}\\
+\medskip 
+
+%  Right Click
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\large\textbf{RightClick} & \small\textsc{09/2011 -- 08/2014} \\
+\end{tabularx}
+\normalsize\url{http://rightclick.cz}
+
+\medskip
+\normalsize\textbf{Software Architect}\\
+\small {Head of the mobile development department. Also working on multiple projects in various technologies including iOS, Android, PHP, Javascript, etc.}\\
+\medskip 
+
+%  Avel
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\large\textbf{Avel Computers} & \small\textsc{11/2007 -- 05/2013} \\
+\end{tabularx}
+\normalsize\url{http://avelcs.cz}
+
+\medskip
+\normalsize\textbf{Web Developer}\\
+\small {Web-based application development, PHP, XHTML, CSS coding, webdesign, project management, customer relationship management.}\\
+\medskip 
+
+
+\end{minipage} % End right-hand side of the page
+
+\newpage
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+%----------------------------------------------------------------------------------------	
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Language skills} 
+
+\medskip 
+\begin{tabular}{ll}
+\small\textbf{Czech} & mother tongue\\
+\small\textbf{English} & advanced\\
+\end{tabular}
+\medskip
+
+%----------------------------------------------------------------------------------------
+\end{minipage} % End left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment	
+
+\section{Hobbies} 
+
+\medskip
+\small Reading\\
+ 
+\medskip 
+
+\end{minipage} % End left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
