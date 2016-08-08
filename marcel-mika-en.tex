@@ -28,15 +28,15 @@
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{tabularx}
 %\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
-%\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
-%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 % Colors for links, text and headings
 \usepackage{hyperref}
 \definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
-\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{shade}{HTML}{644B64} % Peach color for the contact information box
 \definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
-\definecolor{headings}{HTML}{701112} % Dark red color for headings
+\definecolor{headings}{HTML}{534153} % Dark red color for headings
 % Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
 
 \hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
@@ -67,10 +67,11 @@
 %	Title
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Marcel Mika }\\
-\medskip 
-{ Curriculum Vitae \\[-50pt]\par}
-	
+\par\parindent 95pt {\Huge Marcel Mika }
+{  \\[-7pt]\par}
+\par\parindent 95pt {\large Curriculum Vitae}
+{  \\[-58pt]\par}
+\noindent	
 \begin{minipage}[t]{0.5\textwidth}% Start the left-hand side of the page
 \vspace{0pt}% Trick for alignment
 \begin{minipage}[b]{0.30\textwidth} % Start the left-hand side of the page
@@ -106,21 +107,21 @@
 
 \small\textsc{2010 -- 2013} & \large\textbf{Czech Technical University} \\ 
 & \normalsize\textit{Software Engineering} \\ 
-& \small master degree, graduated summa cum laude \\ 
+& \normalsize {master degree, graduated summa cum laude} \\ 
 &\\
 
 % KSU - Exchange
 
 \small\textsc{2010 -- 2011} & \large\textbf{Kansas State University} \\ 
 & \normalsize\textit{Computer Science} \\ 
-& \small exchange programme \\ 
+& \normalsize {exchange programme} \\ 
 &\\
 	 
 % CTU - Bachelor
 
 \small\textsc{2007 -- 2010} & \large\textbf{Czech Technical University} \\ 
 & \normalsize\textit{Software Engineering} \\ 
-& \small bachelor degree \\ 
+& \normalsize {bachelor degree} \\ 
 &\\
 
 \end{tabular}\\[10pt]
@@ -136,42 +137,42 @@
 \begin{tabular}{@{}p{0.2\linewidth}p{0.75\linewidth}@{}} 
 
 % iOS
-\large{i}\textsc{OS} \newline \small\textsc{2012+} & 
+\small{i}\large\textsc{os} \newline \small\textsc{2012+} & 
 Experience with both Objective-C and Swift. Working with Adaptive Layout, Core Data, Core Location and other.\newline
 Knowledge of Cocoa Pods well known libraries such as Alamofire, SnapKit, Firebase, 
 \newline SwiftyJSON, Fabric, etc. \\
 &\\
 
 % Android
-\large\textsc{Android} \newline \small\textsc{2015+} & 
-Building apps with Kotlin and RxJava. Using Realm instead of SQLite.
+\large\textsc{android} \newline \small\textsc{2015+} & 
+Building apps with Kotlin and RxJava. \newline Using Realm instead of SQLite.
 Knowledge of  Retrofit2, Dagger, etc. \\
 &\\
 
 % Liferay
-\large\textsc{Liferay} \newline \small\textsc{2012+} & 
+\large\textsc{liferay} \newline \small\textsc{2012+} & 
 Building the most favorite messenger application on Liferay's Marketplace.
-Worked with Liferay 6.x, Portlets, YUI framework, etc. \\
+Experience with Liferay 6.x, Portlets, YUI framework, etc. \\
 &\\
 
 % Java
-\large\textsc{Java} \newline \small\textsc{2010+} & 
-Creating RESTful services based on Spring. Knowledge of Dependency Injection. \\
+\large\textsc{java} \newline \small\textsc{2010+} & 
+Creating RESTful services based on Spring. Knowledge of Dependency Injection, Hibernate, JPA, etc. \\
 &\\
 
 % Web
-\large\textsc{Web} \newline \small\textsc{2007+} & 
-Building web sites in PHP on Symfony2. Knowledge of HTML5, CSS3, Javascript, Sass, etc.  \\
+\large\textsc{web} \newline \small\textsc{2007+} & 
+Building web apps in PHP on Symfony2. Knowledge of HTML5, CSS3, Javascript, Sass, etc.  \\
 &\\
 
 % UI/UX
-\large\textsc{UI/UX} \newline \small\textsc{2007+} & 
+\large\textsc{ui/ux} \newline \small\textsc{2007+} & 
 Experience with Adobe Photoshop and Sketch. Building mobile apps based on HIG from Apple and
 ADP from Google. \\
 &\\
 
 % GIT
-\large\textsc{GIT} \newline \small\textsc{2011+} & 
+\large\textsc{git} \newline \small\textsc{2011+} & 
 Using Gitflow for development. Worked with Github, Gitlab, SmartGit, Youtrack, etc.  \\
 &\\
 
@@ -181,7 +182,7 @@ Using Gitflow for development. Worked with Github, Gitlab, SmartGit, Youtrack, e
 \end{minipage} % End the left-hand side of the page
 \hfill
 \begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
-\vspace{50pt} % Trick for alignment
+\vspace{122pt} % Trick for alignment
 	
 	
 %----------------------------------------------------------------------------------------
@@ -199,7 +200,7 @@ Using Gitflow for development. Worked with Github, Gitlab, SmartGit, Youtrack, e
 
 \medskip
 \normalsize\textbf{CEO and Founder}\\
-\small {Founder and Lead Developer of a technological startup which is proud to 
+\normalsize {Founder and Lead Developer of a technological startup which is proud to 
 develop the leading messaging platform for Liferay.}\\
 \medskip 
 
@@ -212,7 +213,7 @@ develop the leading messaging platform for Liferay.}\\
 
 \medskip
 \normalsize\textbf{Lead Android Developer}\\
-\small {Developing applications for Android based on the latest \newline technologies like Kotlin, RxJava,
+\normalsize {Developing applications for Android based on the latest \newline technologies like Kotlin, RxJava,
 Realm, etc.}\\
 \medskip 
 
@@ -225,7 +226,7 @@ Realm, etc.}\\
 
 \medskip
 \normalsize\textbf{Lead iOS Developer}\\
-\small {Developing an application for iOS for defect management used at constructions.}\\
+\normalsize {Developing an application for iOS for \newline defect management used at constructions.}\\
 \medskip 
 
 %  Right Click
@@ -237,7 +238,7 @@ Realm, etc.}\\
 
 \medskip
 \normalsize\textbf{Software Architect}\\
-\small {Head of the mobile development department. Also working on multiple projects in various technologies including iOS, Android, PHP, Javascript, etc.}\\
+\normalsize {Head of the mobile development department. \newline Also working on multiple projects in various technologies including iOS, Android, PHP, Javascript, etc.}\\
 \medskip 
 
 %  Avel
@@ -249,17 +250,9 @@ Realm, etc.}\\
 
 \medskip
 \normalsize\textbf{Web Developer}\\
-\small {Web-based application development, PHP, XHTML, CSS coding, webdesign, project management, customer relationship management.}\\
+\normalsize {Web-based application development, PHP, XHTML, CSS coding, webdesign, project management, customer relationship management.}\\
 \medskip 
 
-
-\end{minipage} % End right-hand side of the page
-
-\newpage
-
-\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
-\vspace{0pt} % Trick for alignment
-%----------------------------------------------------------------------------------------	
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES
@@ -268,29 +261,14 @@ Realm, etc.}\\
 \section{Language skills} 
 
 \medskip 
-\begin{tabular}{ll}
-\small\textbf{Czech} & mother tongue\\
-\small\textbf{English} & advanced\\
+\begin{tabular}{@{}ll}
+\small\textbf{Czech} & Native\\
+\small\textbf{English} & Full professional proficiency\\
+\small\textbf{Polish} & Limited working proficiency\\
+\small\textbf{German} & Elementary proficiency\\
 \end{tabular}
 \medskip
 
-%----------------------------------------------------------------------------------------
-\end{minipage} % End left-hand side of the page
-\hfill
-\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
-\vspace{0pt} % Trick for alignment	
-
-\section{Hobbies} 
-
-\medskip
-\small Reading\\
- 
-\medskip 
-
-\end{minipage} % End left-hand side of the page
-\hfill
-\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
-\vspace{0pt} % Trick for alignment
 \end{minipage} % End right-hand side of the page
 
 \end{document}  
